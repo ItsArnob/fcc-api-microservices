@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Timestamp Microservice | fcc project</title>
+      <meta type="description" content="A timestamp microservice project for free code camp.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+      <style>
+          * {
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+          }
+          html {
+              font-family: 'poppins', sans-serif;
+              background: #94D0CC;
+              height:100%;
+
+          }
+          body {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100%;
+
+          }
+          .container {
+              background:#EEC4C4;
+              display:flex;
+              flex-direction:column;
+              align-items:center;
+              padding: 10px;
+              color: #BD4B4B;
+              border-radius:5px;
+              box-shadow:3px 3px 10px rgba(0,0,0,0.5);
+          }
+          ul {
+            list-style-position:inside;
+          }
+          h1 {padding:10px}
+          h3 {padding:10px;}
+          code {
+            background: rgba(255,255,255,.3);
+            padding:3px;
+            border-radius:3px;
+          }
+      </style>
+   </head>
+   <body>
+    <div class="container">
+      <h1>Timestamp microservice</h1>
+      <h3>Example Usage:</h3>
+      <ul>
+        <li><a href="api/2015-12-25">api/2015-12-25</a></li>
+        <li><a href="api/1451001600000">api/1451001600000</a></li>
+      </ul>
+
+      <h3>Example Output:</h3>
+      <p>
+        <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
+      </p>
+    </div>
+  </body>
+</html>
