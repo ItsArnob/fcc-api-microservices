@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>File Metadata microservice | fcc project</title>
+      <meta name="description" content="A file metadata microservice project for free code camp.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+      <style>
+          * {
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+          }
+          html {
+              font-family: 'poppins', sans-serif;
+              background: #94D0CC;
+              height:100%;
+
+          }
+          body {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100%;
+
+          }
+          .container {
+              background:#EEC4C4;
+              display:flex;
+              flex-direction:column;
+              align-items:center;
+              padding: 10px;
+              color: #BD4B4B;
+              border-radius:5px;
+              box-shadow:3px 3px 10px rgba(0,0,0,0.5);
+          }
+         
+          h1 {padding:10px}
+          h3 {padding:10px;}
+          form {
+            display:flex;
+            flex-direction:column;
+          }
+          input {
+            margin:10px 0 10px 0;
+          }
+      </style>
+   </head>
+   <body>
+    <div class="container">
+        <h2>API Project: File Metadata Microservice</h2>
+
+        <h3>Usage:</h3>
+        <p>
+          Please Upload a File ...
+        </p>
+        <div class="view">
+          <h4 id="output"></h4>
+          <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+            <input id="inputfield" type="file" name="upfile" required>
+            
+            <input id="button" type="submit" value="Upload">
+          </form>
+        </div>
+    </div>
+  </body>
+</html>
