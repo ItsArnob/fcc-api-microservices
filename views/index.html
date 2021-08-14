@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Request Header Parser | fcc project</title>
+      <meta type="description" content="A request header parser microservice project for free code camp.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+      <style>
+          * {
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+          }
+          html {
+              font-family: 'poppins', sans-serif;
+              background: #94D0CC;
+              height:100%;
+
+          }
+          body {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100%;
+
+          }
+          .container {
+              background:#EEC4C4;
+              display:flex;
+              flex-direction:column;
+              align-items:center;
+              padding: 10px;
+              color: #BD4B4B;
+              border-radius:5px;
+              box-shadow:3px 3px 10px rgba(0,0,0,0.5);
+              margin:0 50px 0 50px;
+          }
+          h1 {padding:10px}
+          h3 {padding:10px;}
+          code {
+            background: rgba(255,255,255,.3);
+            padding:3px;
+            border-radius:3px;
+          }
+      </style>
+   </head>
+   <body>
+    <div class="container">
+      <h1>Request Header Parser Microservice</h1>
+      <h3>Example Usage:</h3>
+      <p><a href="/api/whoami/">[base url]/api/whoami</a></p>
+
+      <h3>Example Output:</h3>
+      <p>
+        <code>{"ipaddress":"35.191.10.217","software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Safari/537.36","language":"en-US,en;q=0.9"}
+        </code>
+      </p>
+    </div>
+  </body>
+</html>
