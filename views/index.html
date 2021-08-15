@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>URL shortener | fcc project</title>
+      <meta type="description" content="A URL shortener microservice project for free code camp.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+      <style>
+          * {
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+          }
+          html {
+              font-family: 'poppins', sans-serif;
+              background: #94D0CC;
+              height:100%;
+
+          }
+          body {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100%;
+
+          }
+          .container {
+              background:#EEC4C4;
+              display:flex;
+              flex-direction:column;
+              align-items:center;
+              padding: 10px;
+              color: #BD4B4B;
+              border-radius:5px;
+              box-shadow:3px 3px 10px rgba(0,0,0,0.5);
+              margin:0 50px 0 50px;
+          }
+          h1, h3 {padding:10px}
+          fieldset { 
+              padding:5px;
+          }
+          input {padding:2px}
+          input[type=text] {
+              height:30px;
+          }
+          ul { list-style-position:inside; }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+          <h1>URL Shortener Microservice</h1>
+          <form action="api/shorturl" method="POST">
+              <fieldset>
+                  <legend>URL Shortener</legend>
+                  <label for="url_input">URL:</label>
+                  <input id="url_input" type="text" name="url" placeholder="https://itsarnob.github.io"/>
+                  <input type="submit" value="POST URL" />
+              </fieldset>
+          </form>
+          <h3>API info (create, redirect, get info respectively):</h3>
+          <ul>
+              <li>POST - [base URL]/api/shorturl - body = <code>{ url: "https://example.com" }</code></li>
+              <li>GET - [base URL]/api/shorturl/[shortUrlId] </li>
+              <li>GET - [base URL]/api/geturl/[shortUrlId] </li>
+          </ul>
+    </div>
+  </body>
+</html>
