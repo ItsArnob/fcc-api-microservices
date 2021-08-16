@@ -48,7 +48,7 @@ router.post("/users/:uid/exercises", (req, res) => {
                     const { date, duration, description } =
                         exerciseDoc.toObject();
                     res.json({
-                        user._id,
+                        _id: user._id,
                         username: user.username,
                         date: new Date(date).toDateString(),
                         duration,
