@@ -45,10 +45,10 @@ router.post("/users/:uid/exercises", (req, res) => {
             exercise
                 .save()
                 .then((exerciseDoc) => {
-                    const { _id, date, duration, description } =
+                    const { date, duration, description } =
                         exerciseDoc.toObject();
                     res.json({
-                        _id,
+                        user._id,
                         username: user.username,
                         date: new Date(date).toDateString(),
                         duration,
